@@ -13,7 +13,6 @@
 }
 
 .grid-container {
-    background-color: brown;
     width: 80%;
     margin-left: 10%;
     height: 70%;
@@ -24,6 +23,8 @@
 .content1{
     background-color: hsl(31, 77%, 52%);
     flex-basis: calc(0.8/3*1000px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
 }
 .content2 {
     background-color: hsl(184, 100%, 22%);
@@ -33,6 +34,8 @@
 .content3{
     background-color: hsl(179, 100%, 13%);
     flex-basis: calc(0.8/3*1000px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
 
 }
 .button1 {
@@ -82,4 +85,80 @@ button {
 .title {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.button1:hover {
+    border: 3px solid hsl(0, 0%, 95%); 
+    color: hsl(0, 0%, 95%);
+    background-color:hsl(31, 77%, 52%); 
+    cursor: pointer;
+
+}
+.button2:hover{
+    border: 3px solid hsl(0, 0%, 95%); 
+    color: hsl(0, 0%, 95%);
+    background-color:hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+.button3:hover {
+    border: 3px solid hsl(0, 0%, 95%); 
+    color: hsl(0, 0%, 95%);
+    background-color:hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+
+
+@media (max-width:375px) {
+    .parent-container {
+        width: 375px;
+        height: 1100px;
+        background-color: hsl(0, 0%, 95%);
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .grid-container {
+        width: 80%;
+        margin-left: 10%;
+        height: 90%;
+        position: relative;
+        top: 5%;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .content1{
+        background-color: hsl(31, 77%, 52%);
+        flex-basis: calc(0.8/3*1000px);
+        border-top-left-radius: 10px;
+        border-top-right-radius:10px ;
+        border-bottom-left-radius:0px ;
+    }
+    .content2 {
+        background-color: hsl(184, 100%, 22%);
+        flex-basis: calc(0.8/3*1000px);
+    }
+    
+    .content3{
+        background-color: hsl(179, 100%, 13%);
+        flex-basis: calc(0.8/3*1000px);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius:10px ;
+        border-top-right-radius: 0px;
+    
+
+    }
+    button {
+        background-color: hsl(0, 0%, 95%);
+        border: 1px hsl(0, 0%, 95%); 
+        border-radius: 20px;
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    p{
+        margin: 10px;
+    }
+
 }

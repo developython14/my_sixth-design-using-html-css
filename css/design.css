@@ -1,0 +1,85 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+
+.parent-container {
+    width: 1000px;
+    height: 600px;
+    background-color: hsl(0, 0%, 95%);
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.grid-container {
+    background-color: brown;
+    width: 80%;
+    margin-left: 10%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+}
+
+.content1{
+    background-color: hsl(31, 77%, 52%);
+    flex-basis: calc(0.8/3*1000px);
+}
+.content2 {
+    background-color: hsl(184, 100%, 22%);
+    flex-basis: calc(0.8/3*1000px);
+}
+
+.content3{
+    background-color: hsl(179, 100%, 13%);
+    flex-basis: calc(0.8/3*1000px);
+
+}
+.button1 {
+    color:hsl(31, 77%, 52%);
+}
+.button2{
+    color:  hsl(184, 100%, 22%);;
+}
+.button3 {
+    color:hsl(179, 100%, 13%);
+}
+.grid-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-grid {
+    margin: 20px;
+}
+.second-grid {
+    margin: 20px;
+}
+.third-grid {
+    margin: 20px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+}
+h1 {
+   color:  hsl(0, 0%, 95%);
+   font-family: 'Lexend Deca', sans-serif;
+
+   text-transform :uppercase;
+}
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px hsl(0, 0%, 95%); 
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
